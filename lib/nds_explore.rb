@@ -15,9 +15,9 @@ end
 
 def print_first_directors_movie_titles
 index = 0
-array = directors_database[0][:movies]
-while index < array[index] do
-puts "\n #{array[index][:title]}"
+
+while index < directors_database[0][:movies].length do
+puts "\n #{directors_database[0][:movies][index][:titles]}"
 index += 1
 end
 
